@@ -1,0 +1,17 @@
+Title : Geometry Game
+
+Description : Python program to explain Object-Oriented Programming in a fun-way where user have to guess a point 
+              which can lie within a Random Generated Rectangle and guess it's area. Finally, a GUI class that 
+              creates rectangle and point on a canvas.
+
+              Point:
+                    falls_in_rectangle
+            
+              Rectangle:
+                    area
+
+              GUIRectangle(Rectangle):
+                    make/draw
+                
+              GUIPoint(Point):
+                    make/draw
