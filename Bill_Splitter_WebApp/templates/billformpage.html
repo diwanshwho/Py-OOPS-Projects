@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div class="main">Fill the Form Below: </div>
+    <form action="{{ url_for('ResultPage') }}" method="post">
+        {{form.bill_period.label}} {{form.bill_period(type='month', required=True)}} 
+        {{form.amount.label}} {{form.amount(min=0, required=True)}} <br> <hr> <br>
+        {{form.name1.label}} {{form.name1(placeholder='Flatmate 1 Name', required=True)}} 
+        {{form.days1.label}} {{form.days1(min=0, max=31, placeholder='Days in Flat', required=True)}} <br> <hr> <br>
+        {{form.name2.label}} {{form.name2(placeholder='Flatmate 2 Name', required=True)}} 
+        {{form.days2.label}} {{form.days2(min=0, max=31, placeholder='Days in Flat', required=True)}} <br><hr> <br>
+        <div class="btn">{{form.button}}</div>
+    </form>
+        
+{% endblock %}
