@@ -1,0 +1,16 @@
+Title: Email Automater
+
+Description: An app that read user data like names, email addresses, and interested topics from an Excel file and send an emil to each user 	     with news feeds according to their interest everyday.
+
+Design: ExcelFile:
+	    filepath
+	    get_data()
+	Email:
+	    sender
+	    receiver
+	    subject
+	    content
+	    send()
+	NewsFeed:
+	    data
+	    get()
