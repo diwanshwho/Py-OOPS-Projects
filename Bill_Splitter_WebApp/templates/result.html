@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div class="info">
+        Bill Month : {{ form.bill_period.data }} <br>
+        Amount : {{ form.amount.data }} <br> <br>
+
+        FlatMate 1 Name : {{ form.name1.data }} <br>
+        FlatMate 1 Days : {{ form.days1.data }} <br> <br>
+        FlatMate 2 Name : {{ form.name2.data }} <br>
+        FlatMate 2 Days : {{ form.days2.data }} <br> <br>
+
+        {{ form.name1.data }} has to pay::  {{ amount1 }} <br>
+        {{ form.name2.data }} has to pay::  {{ amount2 }}
+
+        <!--Click here to download in PDF Format: <br>-->
+        <!--<a href="Bill_Splitter_WebApp\reports\2023-11.pdf" download>download</a>-->
+
+    </div>
+{% endblock %}
